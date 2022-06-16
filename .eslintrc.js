@@ -6,7 +6,6 @@ module.exports = {
   extends: ["plugin:prettier/recommended", "airbnb", "airbnb/hooks", "react-app", "plugin:react/jsx-runtime"],
   plugins: ["prettier", "unused-imports"],
   rules: {
-    "prettier/prettier": 2,
     semi: 2,
     quotes: [2, "double"],
     "no-undef": 0,
