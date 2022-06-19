@@ -1,10 +1,18 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     jest: true,
   },
-  extends: ["plugin:prettier/recommended", "airbnb", "airbnb/hooks", "react-app", "plugin:react/jsx-runtime"],
-  plugins: ["prettier", "unused-imports"],
+  extends: [
+    "prettier",
+    "react-app",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+  ],
+  plugins: ["unused-imports"],
   rules: {
     semi: 2,
     quotes: [2, "double"],
