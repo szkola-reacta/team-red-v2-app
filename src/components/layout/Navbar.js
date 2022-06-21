@@ -1,25 +1,49 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
-  let activeStyle = {
-    textDecoration: "underline",
-    backgroundColor: "red",
-  };
+  let activeClassName = "active";
   return (
-    <nav>
-      <NavLink
-        to="/"
-        style={({ isActive }) => (isActive ? activeStyle : undefined)}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        style={({ isActive }) => (isActive ? activeStyle : undefined)}
-      >
-        About
-      </NavLink>
-    </nav>
+    <header className="header">
+      <div className="container header__content">
+        <Link to="/" className="header__logo">
+          Logo
+        </Link>
+        <nav className="header__navigation">
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? activeClassName : undefined
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? activeClassName : undefined
+                }
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/team"
+                className={({ isActive }) =>
+                  isActive ? activeClassName : undefined
+                }
+              >
+                Our Team
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
 
