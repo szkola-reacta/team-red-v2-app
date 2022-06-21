@@ -20,6 +20,7 @@ module.exports = {
     "no-shadow": 0,
     "arrow-body-style": 0,
     "no-nested-ternary": 2,
+    "no-confusing-arrow": 0,
     "no-trailing-spaces": 2,
     "unused-imports/no-unused-imports": 1,
     "jsx-quotes": ["error", "prefer-double"],
