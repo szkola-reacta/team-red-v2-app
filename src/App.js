@@ -1,4 +1,3 @@
-import "./App.css";
 import "./styles/style.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -18,10 +17,10 @@ const App = () => {
         <main className="main">
           <div className="container">
             <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/team" element={<Team />}></Route>
-              <Route path="/*" element={<NotFound />}></Route>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/*" element={<NotFound />} />
             </Routes>
           </div>
         </main>
