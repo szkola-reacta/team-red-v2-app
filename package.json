@@ -14,12 +14,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
     "lint:fix": "eslint . --ext .ts,.js,.tsx,.jsx --fix",
-    "format:check": "prettier \"src/**/*.{js,jsx,json,ts,tsx,css,scss}\" -c",
-    "format": "prettier --write \"src/**/*.{js,jsx,json,ts,tsx,css,scss}\" "
+    "format": "prettier \"src/**/*.{js,jsx,json,ts,tsx,css,scss}\" -c",
+    "format:fix": "prettier --write \"src/**/*.{js,jsx,json,ts,tsx,css,scss}\" "
   },
   "eslintConfig": {
     "extends": [

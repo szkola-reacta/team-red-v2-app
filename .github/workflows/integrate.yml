@@ -1,0 +1,19 @@
+name: Continuous Integration
+
+on: [push]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: use node v.14
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: install node modules
+        run: npm install --ignore-scripts
+      - name: eslint check
+        run: npm run lint
+      - name: formating check
+        run: npm run format
