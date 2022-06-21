@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
-  let activeClassName = "active";
+  const activeClassName = "active";
   return (
     <header className="header">
       <div className="container header__content">
@@ -13,9 +13,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) =>
-                  isActive ? activeClassName : undefined
-                }
+                className={({ isActive }) => (isActive ? activeClassName : undefined)}
               >
                 Home
               </NavLink>
@@ -23,9 +21,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/about"
-                className={({ isActive }) =>
-                  isActive ? activeClassName : undefined
-                }
+                className={({ isActive }) => (isActive ? activeClassName : undefined)}
               >
                 About
               </NavLink>
@@ -33,9 +29,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/team"
-                className={({ isActive }) =>
-                  isActive ? activeClassName : undefined
-                }
+                className={({ isActive }) => (isActive ? activeClassName : undefined)}
               >
                 Our Team
               </NavLink>
