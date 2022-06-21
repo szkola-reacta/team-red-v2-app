@@ -1,6 +1,6 @@
 .footer {
   background: $bg-color-2;
-  border-top: .1rem solid $border-color;
+  border-top: 0.1rem solid $border-color;
   padding: 3rem 0;
   font-size: 1.4rem;
   color: $text-footer-color;
@@ -18,9 +18,9 @@
     display: inline-block;
 
     &:not(:last-child) {
-        margin-right: 1.5rem;
+      margin-right: 1.5rem;
     }
-}
+  }
   &__list {
     list-style: none;
     padding-inline-start: 0;
@@ -29,24 +29,25 @@
   &__link {
     &:link,
     &:visited {
-        color: $text-color;
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        transition: all .2s;
+      color: $text-color;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
     }
 
     &:hover,
     &:active {
-        color: $color-primary-blue;
+      color: $color-primary-blue;
     }
-}
+  }
 
-&__copyright {
-  font-size: 1.3rem;
-}
+  &__copyright {
+    font-size: 1.3rem;
+  }
 
-  &__list, &__copyright {
+  &__list,
+  &__copyright {
     text-align: center;
   }
 }

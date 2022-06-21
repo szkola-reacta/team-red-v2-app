@@ -14,18 +14,25 @@ $breakpoint arguement choices:
 
 */
 
-
 @mixin respond($breakpoint) {
   @if $breakpoint == landscape {
-    @media (min-width: 576px) { @content };    //768px
+    @media (min-width: 576px) {
+      @content;
+    } //768px
   }
   @if $breakpoint == tablet {
-    @media (min-width: 768px) { @content };     //992px
+    @media (min-width: 768px) {
+      @content;
+    } //992px
   }
   @if $breakpoint == desktop {
-    @media (min-width: 992px) { @content };    //1200px
+    @media (min-width: 992px) {
+      @content;
+    } //1200px
   }
   @if $breakpoint == large {
-    @media (min-width: 1300px) { @content };    //1800px
+    @media (min-width: 1300px) {
+      @content;
+    } //1800px
   }
 }
