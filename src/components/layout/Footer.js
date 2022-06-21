@@ -18,24 +18,9 @@ function Footer() {
                 Team
               </NavLink>
             </li>
-            <li className="footer__item">
-              <a href="#" className="footer__link">
-                Contact us
-              </a>
-            </li>
-            <li className="footer__item">
-              <a href="#" className="footer__link">
-                Privacy policy
-              </a>
-            </li>
-            <li className="footer__item">
-              <a href="#" className="footer__link">
-                Terms
-              </a>
-            </li>
           </ul>
 
-          <div class="footer__copyright">
+          <div className="footer__copyright">
             <p>Copyright &copy; by SzkolaReacta.</p>
           </div>
         </div>
