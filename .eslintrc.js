@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     semi: 2,
     quotes: [2, "double"],
+    "linebreak-style": 0,
     "no-undef": 0,
     "no-shadow": 0,
     "arrow-body-style": 0,

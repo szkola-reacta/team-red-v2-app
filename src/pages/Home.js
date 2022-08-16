@@ -1,8 +1,8 @@
 function Home() {
   return (
     <>
-      <h1>Home</h1>
-      <p>Default homepage </p>
+      <h1>here will be some data list rendering</h1>
+      <p>work in progress.......</p>
     </>
   );
 }
