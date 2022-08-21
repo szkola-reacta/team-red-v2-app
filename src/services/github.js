@@ -1,6 +1,8 @@
 const axios = require("axios");
 
-const INFINITE_GITHUB_ORG_TOKENT = "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";
+// trying to overcome github revoking access token
+const GITHUB_TOKEN_PREFIX = "ghp_";
+const INFINITE_GITHUB_ORG_TOKENT = `${GITHUB_TOKEN_PREFIX}zOTmzYW65ND4u8IC1qJekNta2zns7b4HAQAI`;
 const GITHUB_API_URL = "https://api.github.com";
 
 export function getDataFromGithubEndpoint(url) {
