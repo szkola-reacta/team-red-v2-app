@@ -7,7 +7,7 @@
   }
 
   &__item {
-    padding: 2px 4px;
+    padding: 4px;
     margin: 2px;
     border-bottom: 1px solid #232323;
     text-align: right;
@@ -17,17 +17,18 @@
     grid-column-gap: 2px;
   }
 
-  //   &__item:not(:first-child) {
-  //     text-align: right;
-  //   }
-
   &__item-name {
     display: flex;
+    align-items: center;
 
     img {
-      width: 20px;
-      height: auto;
+      width: 25px;
+      height: 25px;
       margin: 0px 4px;
     }
+  }
+
+  &__mkt-cap {
+    overflow: hidden;
   }
 }
