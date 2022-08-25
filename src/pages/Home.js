@@ -1,10 +1,9 @@
-import CoinDataFull from "../components/CoinDataFull/CoinDataFull";
+import { CoinDataFull } from "../components/CoinDataFull";
 
 function Home() {
   return (
     <>
-      <h1>here will be some data list rendering</h1>
-      <p>work in progress.......</p>
+      <h2>Coins on market</h2>
       <CoinDataFull />
     </>
   );

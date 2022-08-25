@@ -1,0 +1,33 @@
+.coins {
+  //   color: red;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 2px 4px;
+    margin: 2px;
+    border-bottom: 1px solid #232323;
+    text-align: right;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2px;
+  }
+
+  //   &__item:not(:first-child) {
+  //     text-align: right;
+  //   }
+
+  &__item-name {
+    display: flex;
+
+    img {
+      width: 20px;
+      height: auto;
+      margin: 0px 4px;
+    }
+  }
+}

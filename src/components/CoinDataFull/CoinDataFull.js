@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import getCoinsData from "../../services/api";
-import CoinDataItem from "./CoinDataItem";
+import { CoinDataItem } from ".";
 
 const CoinDataFull = () => {
   const [coinsData, setCoinsData] = useState([]);
@@ -8,23 +8,33 @@ const CoinDataFull = () => {
 
   useEffect(() => {
     getCoinsData()
-      .then((res) => setCoinsData(res.data))
+      .then((response) => {
+        console.log(response);
+        setCoinsData(response);
+      })
       .catch((error) => setError(error.message));
   }, []);
 
   const checkCoinsData = () => {
-    console.log(coinsData, error);
+    console.log(coinsData.data[0], error);
   };
 
   return (
-    <div>
+    <div className="coins">
       <button type="button" onClick={checkCoinsData}>
         check what we have here
       </button>
-      <h2>CoinDataFull</h2>
-      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {coinsData &&
-          coinsData.splice(0, 100).map((item) => {
+      <div className="coins__content">
+        <div className="coins__item">
+          <div>Coin</div>
+          <div>Price</div>
+          <div>24h</div>
+          <div>Mkt 24h</div>
+          <div>Mkt cap</div>
+          <div>Total volume</div>
+        </div>
+        {coinsData.data &&
+          coinsData.data.map((item) => {
             return <CoinDataItem key={item.id} data={item} />;
           })}
       </div>
