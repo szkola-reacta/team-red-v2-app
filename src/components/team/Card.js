@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { ExpandMore as ExpandIcon, Star as StarIcon } from "@mui/icons-material";
 import { useEffect, useState } from "react";
+import { getDataFromGithubEndpoint } from "services/github";
 
 const CustomCard = styled(MUICard)({
   width: 150,
@@ -29,14 +30,15 @@ const ExpandMore = styled(({ expand, ...other }) => {
 }));
 
 export const Card = ({ user }) => {
-  const { avatar_url, login, html_url } = user;
+  const { avatar_url, login, html_url, starred_url } = user;
   const [expand, setExpand] = useState(false);
-  const [starred] = useState(null);
+  const [starred, setStarred] = useState(null);
   useEffect(() => {
-    // get amount starred repo (I have't acces)
-    // getStarred(starred_url.replace("{/owner}{/repo}", ""))
-    //  .then((data) => setStarred(data.length));
-  }, []);
+    // get amount starred repo
+    getDataFromGithubEndpoint(starred_url.replace("{/owner}{/repo}", "")).then((data) =>
+      setStarred(data.length),
+    );
+  }, [starred_url]);
 
   return (
     <CustomCard>

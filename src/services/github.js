@@ -16,7 +16,9 @@ export function getDataFromGithubEndpoint(url) {
     },
   };
 
-  return axios(config);
+  return axios(config)
+    .then((resp) => resp.data)
+    .catch((err) => console.error(err));
 }
 
 export default function getTeamMembers() {

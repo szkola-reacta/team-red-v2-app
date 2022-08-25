@@ -1,20 +1,17 @@
 import { useState, useEffect } from "react";
 import { Box } from "@mui/material";
-import { Card } from "../components/team/Card";
-import { data } from "../components/team/mockData";
+// import { data } from "../components/team/mockData";
+import getTeamMembers from "services/github";
+import { Card } from "components/team/Card";
 
 function Team() {
-  // console.log(data);
   const [members, setMembers] = useState(null);
   useEffect(() => {
-    // getGithubData()
-    //   .then((data) => setMembers(data))
-    //   .catch((err) => console.error(err));
-    setMembers(data);
+    getTeamMembers().then((data) => setMembers(data));
+    // setMembers(data);
   }, []);
+  // console.log(members);
 
-  // const renderArr = members;
-  console.log(members);
   return (
     <>
       <h1>Our Team</h1>
