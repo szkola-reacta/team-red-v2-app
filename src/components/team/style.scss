@@ -1,0 +1,12 @@
+// todo continue styling
+
+.team {
+  &__container {
+    display: flex;
+    gap: 10px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+}
