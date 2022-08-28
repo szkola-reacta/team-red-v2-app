@@ -1,5 +1,5 @@
 // todo continue styling
-@import './src/styles/base/variables';
+@import "./src/styles/base/variables";
 
 .team {
   &__container {
@@ -23,13 +23,13 @@
   &__link {
     &:link,
     &:visited {
-    //  nothing so far
+      //  nothing so far
     }
 
     &:hover .team__image {
-        transform: translateY(-0.2rem);
-        box-shadow: 0 8px 15px rgba(131, 131, 131, 0.56);
-      }
+      transform: translateY(-0.2rem);
+      box-shadow: 0 8px 15px rgba(131, 131, 131, 0.56);
+    }
   }
 
   &__login {
@@ -41,7 +41,7 @@
     border-radius: 50%;
     width: 15rem;
     overflow: hidden;
-    transition: .1s;
+    transition: 0.1s;
     box-shadow: 0 5px 10px rgba(131, 131, 131, 0.6);
   }
 
@@ -57,7 +57,7 @@
     //background-color: #9f9c9c;
     padding: 1rem;
     border-radius: 2rem;
-    transition: .2s;
+    transition: 0.2s;
 
     &:hover {
       background-color: $color-primary-blue;
