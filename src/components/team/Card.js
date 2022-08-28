@@ -3,7 +3,7 @@ import { getDataFromGithubEndpoint } from "services/github";
 
 export const Card = ({ user }) => {
   const { avatar_url, login, html_url, starred_url } = user;
-  const [expand, setExpand] = useState(false); // controll of expanded area
+  const [expand, setExpand] = useState(false); // control of expanded area
   const [starred, setStarred] = useState(null);
   useEffect(() => {
     // get amount starred repo
@@ -15,14 +15,14 @@ export const Card = ({ user }) => {
   // todo styling !
   return (
     <div className="team__card">
-      <a href={html_url} target="_blank" rel="noreferrer">
-        <img src={avatar_url} alt={login} />
-        <div>{login}</div>
+      <a className="team__link" href={html_url} target="_blank" rel="noreferrer">
+        <img className="team__image" src={avatar_url} alt={login} />
+        <div className="team__login">{login}</div>
       </a>
-      <button type="button" onClick={() => setExpand(!expand)}>
+      <button className="team__button" type="button" onClick={() => setExpand(!expand)}>
         {!expand ? "Show more" : "Show less"}
       </button>
-      <div style={{ display: expand ? "block" : "none" }}>{`Starred repo:  ${starred}`}</div>
+      <div className="team__more-info" style={{ display: expand ? "block" : "none" }}>{`Starred repo:  ${starred}`}</div>
     </div>
   );
 };
