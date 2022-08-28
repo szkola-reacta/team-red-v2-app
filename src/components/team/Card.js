@@ -22,10 +22,9 @@ export const Card = ({ user }) => {
       <button className="team__button" type="button" onClick={() => setExpand(!expand)}>
         {!expand ? "Show more" : "Show less"}
       </button>
-      <div
-        className="team__more-info"
-        style={{ display: expand ? "block" : "none" }}
-      >{`Starred repo:  ${starred}`}</div>
+      <div className="team__more-info" style={{ display: expand ? "block" : "none" }}>
+        {`Starred repo:  ${starred}`}
+      </div>
     </div>
   );
 };
