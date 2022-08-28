@@ -4,19 +4,20 @@
 .team {
   &__container {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 3rem;
   }
 
   &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30rem;
+    width: 27rem;
     background-color: $bg-color-2;
     border: 1px solid $border-color;
-    padding: 2.5rem 2rem 2rem;
+    padding: 2.5rem 1.5rem 2rem;
   }
 
   &__link {
@@ -27,7 +28,7 @@
 
     &:hover .team__image {
         transform: translateY(-0.2rem);
-        box-shadow: 0 10px 10px rgba(131, 131, 131, 0.56);
+        box-shadow: 0 8px 15px rgba(131, 131, 131, 0.56);
       }
   }
 
