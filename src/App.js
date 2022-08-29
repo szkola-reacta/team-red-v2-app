@@ -1,9 +1,7 @@
 import "./styles/style.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
@@ -29,5 +27,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;
