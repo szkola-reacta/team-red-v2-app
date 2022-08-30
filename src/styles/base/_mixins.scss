@@ -6,33 +6,72 @@
 [992 - 1300] is where our normal styles apply
 1300px + :      Big desktop
 
-$breakpoint arguement choices:
+$breakpoint argument choices:
 - phone
 - tablet
 - desktop
 - large
 
 */
-
 @mixin respond($breakpoint) {
   @if $breakpoint == landscape {
     @media (min-width: 576px) {
       @content;
-    } //768px
+    }
+    //768px
   }
   @if $breakpoint == tablet {
     @media (min-width: 768px) {
       @content;
-    } //992px
+    }
+    //992px
   }
   @if $breakpoint == desktop {
     @media (min-width: 992px) {
       @content;
-    } //1200px
+    }
+    //1200px
   }
   @if $breakpoint == large {
     @media (min-width: 1300px) {
       @content;
-    } //1800px
+    }
+    //1800px
+  }
+}
+
+@keyframes LogoOne {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 75%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes LogoTwo {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
   }
 }

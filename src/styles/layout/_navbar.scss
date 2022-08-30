@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-
   background: $bg-color-2;
   border-bottom: 1px solid $border-color;
 
@@ -16,14 +15,18 @@
   }
 
   &__logo {
-
+    margin: .25em;
+    border: 2px solid $color-primary-blue;
+    border-radius: 50%;
     padding: 1em;
 
     &-one {
       position: absolute;
+      animation: LogoOne 10s infinite alternate;
     }
-    &-two{
 
+    &-two {
+      animation: LogoTwo 10s infinite alternate;
     }
   }
 
