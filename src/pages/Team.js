@@ -12,9 +12,8 @@ function Team() {
     //   .catch((err) => console.error(err));
     setMembers(data);
   }, []);
-
   // const renderArr = members;
-  console.log(members);
+  // console.log(members);
   return (
     <>
       <h1>Our Team</h1>
