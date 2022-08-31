@@ -1,0 +1,9 @@
+<application>
+  <component name="StringManipulationState">
+    <option name="lastAction">
+      <UniversalActionModel>
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.increment.IncrementAction" />
+      </UniversalActionModel>
+    </option>
+  </component>
+</application>
