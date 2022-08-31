@@ -18,8 +18,8 @@ h1 {
 }
 
 .container {
-  max-width: 114rem;
   margin: 0 auto;
+  max-width: 114rem;
   padding: 0 1.5rem;
 }
 
@@ -64,24 +64,24 @@ h1 {
 }
 
 .main {
-  background: #fff;
   min-height: 50rem;
   padding: 3rem 0;
+  background: #fff;
 }
 
 .footer {
-  background: #f8fafd;
-  border-top: 0.1rem solid #eff2f5;
   padding: 3rem 0;
+  background: #f8fafd;
   font-size: 1.4rem;
   color: #777;
+  border-top: 0.1rem solid #eff2f5;
 }
 .footer__logo-box {
-  text-align: center;
-  color: #000;
+  padding-bottom: 3rem;
   font-size: 2.5rem;
   font-weight: 700;
-  padding-bottom: 3rem;
+  text-align: center;
+  color: #000;
 }
 .footer__info {
   display: block;
@@ -97,11 +97,11 @@ h1 {
   padding-inline-start: 0;
 }
 .footer__link:link, .footer__link:visited {
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
   transition: all 0.2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
 }
 .footer__link:hover, .footer__link:active {
   color: #3861fb;
