@@ -34,5 +34,8 @@ module.exports = {
     "react/prop-types": 0,
     "object-curly-newline": 0,
     camelcase: 0,
+    "import/no-unresolved": 0,
+    "implicit-arrow-linebreak": 0,
+    "function-paren-newline": 0,
   },
 };
