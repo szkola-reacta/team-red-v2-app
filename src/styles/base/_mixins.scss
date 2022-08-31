@@ -40,38 +40,3 @@ $breakpoint argument choices:
   }
 }
 
-@keyframes LogoOne {
-  0% {
-    opacity: 100%;
-  }
-  25% {
-    opacity: 75%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 25%;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes LogoTwo {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}

@@ -20,14 +20,6 @@
     border-radius: 50%;
     padding: 1em;
 
-    &-one {
-      position: absolute;
-      animation: LogoOne 10s infinite alternate;
-    }
-
-    &-two {
-      animation: LogoTwo 10s infinite alternate;
-    }
   }
 
   &__navigation {
