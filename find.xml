@@ -1,0 +1,21 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="Current File" />
+    <option name="defaultScopeName" value="Current File" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
+    <option name="SEARCH_SCOPE" value="Current File" />
+    <mask>*.xml</mask>
+    <mask>*.shtml</mask>
+    <mask>*.shtm</mask>
+    <mask>*.ng</mask>
+    <mask>*.htm</mask>
+    <mask>*.sht</mask>
+    <mask>*.ats</mask>
+    <mask>*.ts</mask>
+    <mask>*.cjs</mask>
+    <mask>*.html</mask>
+    <mask>*.css</mask>
+    <mask>*.js</mask>
+  </component>
+</application>

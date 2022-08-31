@@ -1,0 +1,15 @@
+<application>
+  <component name="EditorSettings">
+    <option name="STRIP_TRAILING_SPACES" value="Whole" />
+    <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
+  </component>
+  <component name="JSCodeFoldingSettings">
+    <option name="collapseArrayLiterals" value="true" />
+    <option name="collapseObjectLiterals" value="true" />
+    <option name="COLLAPSE_OBJECT_LITERALS" value="true" />
+    <option name="COLLAPSE_ARRAY_LITERALS" value="true" />
+  </component>
+  <component name="JSEditorOptions">
+    <option name="START_STRING_INTERPOLATION_ON_TYPING" value="true" />
+  </component>
+</application>
