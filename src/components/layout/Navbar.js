@@ -1,13 +1,12 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 function Navbar() {
   const activeClassName = "active";
   return (
     <header className="header">
       <div className="container header__content">
-        <Link to="/" className="header__logo">
-          Logo
-        </Link>
+        <Logo />
         <nav className="header__navigation">
           <ul>
             <li>

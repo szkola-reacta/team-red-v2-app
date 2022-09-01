@@ -10,7 +10,6 @@ function Team() {
     // getTeamMembers().then((data) => setMembers(data));
     setMembers(data);
   }, []);
-  // console.log(members);
 
   return (
     <>
