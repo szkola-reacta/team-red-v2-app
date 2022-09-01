@@ -113,43 +113,4 @@ h1 {
   text-align: center;
 }
 
-.home__headline {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 14px 0;
-}
-
-.home__link {
-  text-decoration: none;
-}
-
-.coins__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.coins__item {
-  padding: 4px;
-  margin: 2px;
-  border-bottom: 1px solid #232323;
-  text-align: right;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 2px;
-}
-.coins__item-name {
-  display: flex;
-  align-items: center;
-}
-.coins__item-name img {
-  width: 25px;
-  height: 25px;
-  margin: 0px 4px;
-}
-.coins__mkt-cap {
-  overflow: hidden;
-}
-
 /*# sourceMappingURL=style.css.map */
