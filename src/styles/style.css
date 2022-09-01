@@ -1,0 +1,155 @@
+/*
+0 - 576px:      Phone
+768 - 993px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[992 - 1300] is where our normal styles apply
+1300px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tablet
+- desktop
+- large
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+h1 {
+  margin: 1rem 0 3rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 114rem;
+  padding: 0 1.5rem;
+}
+
+.header {
+  width: 100%;
+  background: #f8fafd;
+  border-bottom: 1px solid #eff2f5;
+}
+.header__content {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  color: #000;
+}
+.header__logo {
+  margin: 0.25em;
+  border: 2px solid #3861fb;
+  border-radius: 50%;
+  padding: 1em;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+.header__navigation ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.header__navigation ul li a {
+  transition: 0.3s ease all;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+.header__navigation ul li a:hover, .header__navigation ul li a.active {
+  color: #3861fb;
+}
+
+.main {
+  min-height: 50rem;
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.footer {
+  padding: 3rem 0;
+  background: #f8fafd;
+  font-size: 1.4rem;
+  color: #777;
+  border-top: 0.1rem solid #eff2f5;
+}
+.footer__logo-box {
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+.footer__info {
+  display: block;
+}
+.footer__item {
+  display: inline-block;
+}
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.footer__list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.footer__link:link, .footer__link:visited {
+  display: inline-block;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+.footer__link:hover, .footer__link:active {
+  color: #3861fb;
+}
+.footer__copyright {
+  font-size: 1.3rem;
+}
+.footer__list, .footer__copyright {
+  text-align: center;
+}
+
+.home__headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.home__link {
+  text-decoration: none;
+}
+
+.coins__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.coins__item {
+  padding: 4px;
+  margin: 2px;
+  border-bottom: 1px solid #232323;
+  text-align: right;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 2px;
+}
+.coins__item-name {
+  display: flex;
+  align-items: center;
+}
+.coins__item-name img {
+  width: 25px;
+  height: 25px;
+  margin: 0px 4px;
+}
+.coins__mkt-cap {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
