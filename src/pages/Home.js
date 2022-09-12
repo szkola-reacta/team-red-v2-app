@@ -1,7 +1,9 @@
-import { useLoginContext } from "components/login/LoginProvider";
 import { Link } from "react-router-dom";
 
-function Home() {
+import { useLoginContext } from "components/login/LoginProvider";
+import { CoinDataFull } from "../components/CoinDataFull";
+
+const Home = () => {
   const { logged, setLogged } = useLoginContext();
   return (
     <>
@@ -21,10 +23,24 @@ function Home() {
           </>
         )}
       </p>
-      <h1>here will be some data list rendering</h1>
-      <p>work in progress.......</p>
+      <div className="home__headline">
+        <h2>Coins on market</h2>
+        <p>
+          Powered by&nbsp;
+          <a
+            href="https://www.coingecko.com/en/api"
+            target="_blank"
+            rel="noreferrer"
+            className="home__link"
+          >
+            CoinGecko API
+          </a>
+        </p>
+      </div>
+      <CoinDataFull />
+      c807770801b6fec3aff074dce151573
     </>
   );
-}
+};
 
 export default Home;

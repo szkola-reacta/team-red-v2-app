@@ -1,0 +1,34 @@
+.coins {
+  //   color: red;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 4px;
+    margin: 2px;
+    border-bottom: 1px solid #232323;
+    text-align: right;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 2px;
+  }
+
+  &__item-name {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin: 0px 4px;
+    }
+  }
+
+  &__mkt-cap {
+    overflow: hidden;
+  }
+}

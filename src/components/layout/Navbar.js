@@ -1,7 +1,26 @@
 import { NavLink, Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar = () => {
+  const navLinks = [
+    {
+      name: "Home",
+      linkTo: "/",
+    },
+    {
+      name: "About",
+      linkTo: "/about",
+    },
+    {
+      name: "Our Team",
+      linkTo: "/team",
+    },
+    {
+      name: "Sing in",
+      linkTo: "/login",
+    },
+  ];
   const activeClassName = "active";
+
   return (
     <header className="header">
       <div className="container header__content">
@@ -10,35 +29,23 @@ function Navbar() {
         </Link>
         <nav className="header__navigation">
           <ul>
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? activeClassName : undefined)}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? activeClassName : undefined)}
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/team"
-                className={({ isActive }) => (isActive ? activeClassName : undefined)}
-              >
-                Our Team
-              </NavLink>
-            </li>
+            {navLinks.map((link) => {
+              return (
+                <li key={`link-${link.name}`}>
+                  <NavLink
+                    className={({ isActive }) => (isActive ? activeClassName : undefined)}
+                    to={link.linkTo}
+                  >
+                    {link.name}
+                  </NavLink>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
     </header>
   );
-}
+};
 
 export default Navbar;
