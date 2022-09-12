@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { About, NotFound, Home, Team, Login } from "./pages";
+import { About, NotFound, Home, Team, Login, Panel } from "./pages";
 import { Navbar, Footer } from "./components/layout";
 // import { useLoginContext } from "components/login/LoginProvider";
 import "./styles/style.scss";
@@ -21,6 +21,7 @@ const App = () => {
               {/* Examplary rout  */}
               {/* <Route path="example" element={logged ? <ExampleElem/> : <Login/>}/> */}
               <Route path="/login" element={<Login />} />
+              <Route path="/panel" element={<Panel />} />
             </Routes>
           </div>
         </main>
