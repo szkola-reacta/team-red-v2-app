@@ -1,8 +1,28 @@
+import { Link } from "react-router-dom";
+
+import { useLoginContext } from "components/login/LoginProvider";
 import { CoinDataFull } from "../components/CoinDataFull";
 
-function Home() {
+const Home = () => {
+  const { logged, setLogged } = useLoginContext();
   return (
     <>
+      <p>
+        {logged ? (
+          <>
+            You are logged as &nbsp;
+            <b>{logged}</b>
+            <button style={{ marginLeft: "2em" }} type="button" onClick={() => setLogged("")}>
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            You are not logged,
+            <Link to="/login"> loggin please!</Link>
+          </>
+        )}
+      </p>
       <div className="home__headline">
         <h2>Coins on market</h2>
         <p>
@@ -18,8 +38,9 @@ function Home() {
         </p>
       </div>
       <CoinDataFull />
+      c807770801b6fec3aff074dce151573
     </>
   );
-}
+};
 
 export default Home;
