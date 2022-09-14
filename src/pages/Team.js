@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
-// import getTeamMembers from "services/github";
+import getTeamMembers from "services/github";
 import { Card } from "components/team/Card";
-import { data } from "../components/team/mockData";
+// import { data } from "../components/team/mockData";
+import { members as realMembers } from "members";
 import "components/team/style.scss";
 
 function Team() {
   const [members, setMembers] = useState([]);
   useEffect(() => {
-    // getTeamMembers().then((data) => setMembers(data));
-    setMembers(data);
+    getTeamMembers().then((data) =>
+      setMembers(data.filter((member) => realMembers.includes(member.login))),
+    );
+    // setMembers(data);
   }, []);
   // console.log(members);
 
