@@ -1,0 +1,36 @@
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  &__welcome {
+    font-weight: 700;
+    font-size: 2rem;
+    width: 100%;
+  }
+  &__name {
+    color: $color-primary-blue;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    &::after {
+      content: "\2192";
+      display: inline-block;
+      font-size: 1.8rem;
+      transition: all 0.2s;
+      margin-left: 0.5rem;
+    }
+    &:hover {
+      &::after {
+        transform: translateX(3px);
+      }
+    }
+  }
+}

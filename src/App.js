@@ -1,6 +1,7 @@
 import "./styles/style.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Login } from "pages/Login";
+import { Panel } from "pages/Panel";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import About from "./pages/About";
@@ -25,6 +26,7 @@ const App = () => {
               {/* Examplary rout  */}
               {/* <Route path="example" element={logged ? <ExampleElem/> : <Login/>}/> */}
               <Route path="/login" element={<Login />} />
+              <Route path="/panel" element={<Panel />} />
             </Routes>
           </div>
         </main>
