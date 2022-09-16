@@ -1,13 +1,9 @@
 import "./styles/style.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Login } from "pages/Login";
-import { Panel } from "pages/Panel";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
-import Home from "./pages/Home";
-import Team from "./pages/Team";
+
+import { About, Home, NotFound, Team, Panel, Login } from "./pages";
+import { Navbar, Footer } from "./components/layout";
+
 // import { useLoginContext } from "components/login/LoginProvider";
 
 const App = () => {
